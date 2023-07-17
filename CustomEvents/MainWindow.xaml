@@ -1,0 +1,21 @@
+﻿<Window x:Class="Events.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Events"
+        mc:Ignorable="d"
+        Title="Events" Height="450" Width="800">
+    <Grid x:Name="g_main">
+        <TextBox x:Name="number1_Input" HorizontalAlignment="Left" Margin="23,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" FontSize="36"/>
+        <TextBox x:Name="number2_Input" HorizontalAlignment="Left" Margin="223,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" FontSize="36"/>
+        <TextBox x:Name="result" HorizontalAlignment="Left" Margin="424,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="354" FontSize="36" IsEnabled="False"/>
+        <Button x:Name="sum" Content="+" HorizontalAlignment="Left" Margin="27,134,0,0" VerticalAlignment="Top" FontSize="36" Click="PerformOperation"/>
+        <Button x:Name="multiply" Content="*" HorizontalAlignment="Left" Margin="27,203,0,0" VerticalAlignment="Top" FontSize="36" Width="29" Click="PerformOperation"/>
+        <Button x:Name="subtract" Content="-" HorizontalAlignment="Left" Margin="61,134,0,0" VerticalAlignment="Top" FontSize="36" Width="29" Click="PerformOperation"/>
+        <Button x:Name="divide" Content="/" HorizontalAlignment="Left" Margin="62,203,0,0" VerticalAlignment="Top" FontSize="36" Width="28" Click="PerformOperation"/>
+        <Button x:Name="pickNumber1" Content="Number 1" HorizontalAlignment="Left" Margin="23,65,0,0" VerticalAlignment="Top" FontSize="36" Width="177" Click="PickNumber1_Click"/>
+        <Button x:Name="pickNumber2" Content="Number 2" HorizontalAlignment="Left" Margin="223,65,0,0" VerticalAlignment="Top" FontSize="36" Width="177" Click="PickNumber2_Click"/>
+        <Button x:Name="changeColor" Content="Change color" HorizontalAlignment="Left" Margin="424,65,0,0" VerticalAlignment="Top" FontSize="36" Width="354" Click="ChangeColor_Click"/>
+    </Grid>
+</Window>

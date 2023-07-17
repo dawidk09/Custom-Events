@@ -1,0 +1,17 @@
+﻿<Window x:Class="Events.Slider"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Events"
+        mc:Ignorable="d"
+        Title="Slider" Height="450" Width="800">
+    <Grid>
+        <Slider x:Name="slider" HorizontalAlignment="Center" Margin="0,25,0,0" VerticalAlignment="Top" Width="780" Height="33" FontSize="36" Maximum="100" ValueChanged="Slider_ValueChanged" TickPlacement="None" IsSnapToTickEnabled="True" RenderTransformOrigin="0.5,1.004" />
+        <TextBlock x:Name="yourNumber" HorizontalAlignment="Center" Margin="0,58,0,0" Text="Your number" TextWrapping="Wrap" VerticalAlignment="Top" Height="72" Width="220" FontSize="36"/>
+        <TextBox x:Name="numberInput" HorizontalAlignment="Left" Margin="23,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="288" Height="78" FontSize="36" TextChanged="tb_number_TextChanged"/>
+        <TextBlock x:Name="instructions" HorizontalAlignment="Center" Margin="0,130,0,0" Text="Enter number manually or use the slider" TextWrapping="Wrap" VerticalAlignment="Top" Height="72" Width="753" FontSize="36"/>
+        <Button x:Name="confirm" Content="OK" HorizontalAlignment="Left" Margin="550,217,0,0" VerticalAlignment="Top" FontSize="36" Height="63" Width="204" Click="Confirm_Click"/>
+
+    </Grid>
+</Window>
